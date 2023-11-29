@@ -1,0 +1,614 @@
+[
+    {
+      "title": "Fitness Habits Survey",
+      "description": "Survey on daily fitness routines",
+      "category": "Health and Wellness",
+      "image": "https://i.ibb.co/27S8MgK/young-woman-with-sports-equipment-near-fitball.jpg",
+      "totalVotes": 150,
+      "questions": [
+        {
+          "id": 101,
+          "type": "multiple_choice",
+          "question": "How often do you exercise?",
+          "options": ["Everyday", "3-4 times a week", "Rarely"]
+        },
+        {
+          "id": 102,
+          "type": "multiple_choice",
+          "question": "What type of exercise do you prefer?",
+          "options": ["Cardio", "Strength Training", "Yoga"]
+        },
+        {
+          "id": 103,
+          "type": "multiple_choice",
+          "question": "Do you follow a specific diet?",
+          "options": ["Yes", "No"]
+        },
+        {
+          "id": 104,
+          "type": "multiple_choice",
+          "question": "What motivates you to maintain a fitness routine?",
+          "options": ["Health benefits", "Weight loss", "Stress relief"]
+        }
+      ]
+    },
+    {
+      "title": "Work-Life Balance Survey",
+      "description": "Explore how people manage work and life",
+      "category": "Lifestyle",
+      "image": "https://i.ibb.co/wds8bn6/pexels-lukas-669612.jpg",
+      "totalVotes": 200,
+      "questions": [
+        {
+          "id": 105,
+          "type": "multiple_choice",
+          "question": "Do you feel stressed due to work-life imbalance?",
+          "options": ["Yes, frequently", "Sometimes", "No"]
+        },
+        {
+          "id": 106,
+          "type": "multiple_choice",
+          "question": "Do you have a fixed work schedule?",
+          "options": ["Yes", "No"]
+        },
+        {
+          "id": 107,
+          "type": "multiple_choice",
+          "question": "What activities help you relax after work?",
+          "options": ["Reading", "Exercising", "Watching TV"]
+        },
+        {
+          "id": 108,
+          "type": "multiple_choice",
+          "question": "How do you prioritize between work and personal life?",
+          "options": ["Work comes first", "Balance both equally", "Personal life is a priority"]
+        }
+      ]
+    },
+    {
+        "title": "Environmental Awareness Survey",
+        "description": "Understanding attitudes toward environmental issues",
+        "category": "Environment",
+        "image": "https://i.ibb.co/8gBjpjN/reforestation-done-by-voluntary-group.jpg",
+        "totalVotes": 120,
+        "questions": [
+          {
+            "id": 109,
+            "type": "multiple_choice",
+            "question": "Do you actively recycle?",
+            "options": ["Yes, regularly", "Sometimes", "No"]
+          },
+          {
+            "id": 110,
+            "type": "multiple_choice",
+            "question": "How concerned are you about climate change?",
+            "options": ["Very concerned", "Somewhat concerned", "Not concerned"]
+          },
+          {
+            "id": 111,
+            "type": "multiple_choice",
+            "question": "Do you use eco-friendly products?",
+            "options": ["Yes", "No"]
+          },
+          {
+            "id": 112,
+            "type": "multiple_choice",
+            "question": "Do you support environmental conservation efforts?",
+            "options": ["Strongly support", "Support", "Neutral", "Do not support"]
+          }
+        ]
+      },
+      {
+        "title": "Technology Adoption Survey",
+        "description": "Explore preferences for tech gadgets",
+        "category": "Technology",
+        "image": "https://i.ibb.co/G7q7jfY/pexels-cottonbro-studio-8721318.jpg",
+        "totalVotes": 180,
+        "questions": [
+          {
+            "id": 113,
+            "type": "multiple_choice",
+            "question": "How often do you upgrade your smartphone?",
+            "options": ["Every year", "Every 2 years", "Less frequently"]
+          },
+          {
+            "id": 114,
+            "type": "multiple_choice",
+            "question": "What operating system do you prefer?",
+            "options": ["iOS", "Android", "Other"]
+          },
+          {
+            "id": 115,
+            "type": "multiple_choice",
+            "question": "Do you use smart home devices?",
+            "options": ["Yes", "No"]
+          },
+          {
+            "id": 116,
+            "type": "multiple_choice",
+            "question": "What tech gadget do you use most frequently?",
+            "options": ["Smartphone", "Laptop", "Smartwatch", "Tablet"]
+          }
+        ]
+      },
+      
+        {
+          "title": "Food Preferences Survey",
+          "description": "Investigate food habits and preferences",
+          "category": "Health and Wellness",
+          "image": "https://i.ibb.co/QJ7NS6x/pexels-cottonbro-studio-6053899.jpg",
+          "totalVotes": 220,
+          "questions": [
+            {
+              "id": 117,
+              "type": "multiple_choice",
+              "question": "Which cuisine do you prefer the most?",
+              "options": ["Italian", "Mexican", "Asian", "Mediterranean"]
+            },
+            {
+              "id": 118,
+              "type": "multiple_choice",
+              "question": "Do you follow a specific diet?",
+              "options": ["Yes", "No"]
+            },
+            {
+              "id": 119,
+              "type": "multiple_choice",
+              "question": "Do you enjoy cooking?",
+              "options": ["Yes, regularly", "Occasionally", "Rarely"]
+            },
+            {
+              "id": 120,
+              "type": "multiple_choice",
+              "question": "What's your favorite dessert?",
+              "options": ["Cake", "Ice cream", "Pie", "Cookies"]
+            }
+          ]
+        },
+        {
+          "title": "Travel Behavior Survey",
+          "description": "Study travel patterns and choices",
+          "category": "Travel",
+          "image": "https://i.ibb.co/YTPXJ5X/pexels-virendra-singh-19124327.jpg",
+          "totalVotes": 190,
+          "questions": [
+            {
+              "id": 121,
+              "type": "multiple_choice",
+              "question": "Preferred mode of transportation while traveling?",
+              "options": ["Airplane", "Train", "Car", "Bus"]
+            },
+            {
+              "id": 122,
+              "type": "multiple_choice",
+              "question": "Favorite travel destination type?",
+              "options": ["Beach", "Mountains", "City", "Countryside"]
+            },
+            {
+              "id": 123,
+              "type": "multiple_choice",
+              "question": "Do you prefer solo or group travel?",
+              "options": ["Solo", "Group"]
+            },
+            {
+              "id": 124,
+              "type": "multiple_choice",
+              "question": "What's your most significant travel motivation?",
+              "options": ["Adventure", "Relaxation", "Culture", "Exploration"]
+            }
+          ]
+        },
+
+        
+            {
+              "title": "Financial Literacy Survey",
+              "description": "Understanding financial knowledge",
+              "category": "Finance",
+              "image": "https://i.ibb.co/J52w5zv/pexels-morthy-jameson-9588217.jpg",
+              "totalVotes": 170,
+              "questions": [
+                {
+                  "id": 125,
+                  "type": "multiple_choice",
+                  "question": "How would you rate your financial knowledge?",
+                  "options": ["Advanced", "Intermediate", "Basic"]
+                },
+                {
+                  "id": 126,
+                  "type": "multiple_choice",
+                  "question": "Do you invest in stocks or cryptocurrencies?",
+                  "options": ["Stocks", "Cryptocurrencies", "Both", "Neither"]
+                },
+                {
+                  "id": 127,
+                  "type": "multiple_choice",
+                  "question": "Have you ever taken a financial course?",
+                  "options": ["Yes", "No"]
+                },
+                {
+                  "id": 128,
+                  "type": "multiple_choice",
+                  "question": "How often do you check your bank account?",
+                  "options": ["Daily", "Weekly", "Monthly", "Rarely"]
+                }
+              ]
+            },
+            {
+              "title": "Mental Health Survey",
+              "description": "Explore mental health perceptions",
+              "category": "Health and Wellness",
+              "image": "https://i.ibb.co/9N6T272/woman-with-problems.jpg",
+              "totalVotes": 210,
+              "questions": [
+                {
+                  "id": 129,
+                  "type": "multiple_choice",
+                  "question": "Do you practice mindfulness or meditation?",
+                  "options": ["Yes, regularly", "Occasionally", "No"]
+                },
+                {
+                  "id": 130,
+                  "type": "multiple_choice",
+                  "question": "Do you believe mental health is stigmatized in society?",
+                  "options": ["Strongly Agree", "Agree", "Disagree", "Strongly Disagree"]
+                },
+                {
+                  "id": 131,
+                  "type": "multiple_choice",
+                  "question": "Do you have someone to talk to when feeling low?",
+                  "options": ["Yes", "No"]
+                },
+                {
+                  "id": 132,
+                  "type": "multiple_choice",
+                  "question": "How do you cope with stress?",
+                  "options": ["Exercise", "Meditation", "Talking to someone", "Other"]
+                }
+              ]
+            },
+           
+            
+                {
+                  "title": "Social Media Usage Survey",
+                  "description": "Study social media usage patterns",
+                  "category": "Technology",
+                  "image": "https://i.ibb.co/kGsc46D/overhead-view-social-media-networking-team-looking-digital-tablet.jpg",
+                  "totalVotes": 160,
+                  "questions": [
+                    {
+                      "id": 133,
+                      "type": "multiple_choice",
+                      "question": "Which social media platform do you use the most?",
+                      "options": ["Facebook", "Instagram", "Twitter", "TikTok", "LinkedIn", "Other"]
+                    },
+                    {
+                      "id": 134,
+                      "type": "multiple_choice",
+                      "question": "How many hours per day do you spend on social media?",
+                      "options": ["<1 hour", "1-2 hours", "2-4 hours", ">4 hours"]
+                    },
+                    {
+                      "id": 135,
+                      "type": "multiple_choice",
+                      "question": "Do you feel social media has a positive impact on your life?",
+                      "options": ["Yes", "No", "Neutral"]
+                    },
+                    {
+                      "id": 136,
+                      "type": "multiple_choice",
+                      "question": "Have you ever taken a break from social media?",
+                      "options": ["Yes", "No"]
+                    }
+                  ]
+                },
+                {
+                  "title": "Remote Work Satisfaction Survey",
+                  "description": "Evaluate satisfaction with remote work",
+                  "category": "Work & Career",
+                  "image": "https://i.ibb.co/zXWBy1w/pexels-andrew-neel-3178818.jpg",
+                  "totalVotes": 230,
+                  "questions": [
+                    {
+                      "id": 137,
+                      "type": "multiple_choice",
+                      "question": "Do you find it easier to maintain a work-life balance while working remotely?",
+                      "options": ["Yes", "No", "Sometimes"]
+                    },
+                    {
+                      "id": 138,
+                      "type": "multiple_choice",
+                      "question": "Do you miss the office environment while working remotely?",
+                      "options": ["Yes", "No", "Neutral"]
+                    },
+                    {
+                      "id": 139,
+                      "type": "multiple_choice",
+                      "question": "Has remote work positively affected your productivity?",
+                      "options": ["Yes", "No", "Neutral"]
+                    },
+                    {
+                      "id": 140,
+                      "type": "multiple_choice",
+                      "question": "Do you have a dedicated workspace for remote work?",
+                      "options": ["Yes", "No", "Sometimes"]
+                    }
+                  ]
+                },
+                {
+                    "title": "Climate Change Survey",
+                    "description": "Understanding attitudes toward climate change",
+                    "category": "Environment",
+                    "image": "https://i.ibb.co/zfff9L0/pexels-pixabay-60013.jpg",
+                    "totalVotes": 185,
+                    "questions": [
+                      {
+                        "id": 141,
+                        "type": "multiple_choice",
+                        "question": "What is your level of concern about climate change?",
+                        "options": ["Very concerned", "Moderately concerned", "Slightly concerned", "Not concerned"]
+                      },
+                      {
+                        "id": 142,
+                        "type": "multiple_choice",
+                        "question": "Do you believe human activity contributes to climate change?",
+                        "options": ["Strongly agree", "Agree", "Neutral", "Disagree", "Strongly disagree"]
+                      },
+                      {
+                        "id": 143,
+                        "type": "multiple_choice",
+                        "question": "Are you willing to change your lifestyle to help the environment?",
+                        "options": ["Yes, definitely", "Maybe", "Not sure", "No"]
+                      },
+                      {
+                        "id": 144,
+                        "type": "multiple_choice",
+                        "question": "Do you think governments should do more to combat climate change?",
+                        "options": ["Absolutely", "To some extent", "Not sure", "No"]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Reading Habits Survey",
+                    "description": "Investigate reading habits and preferences",
+                    "category": "Education",
+                    "image": "https://i.ibb.co/rf0nxkY/studying-girl-with-stacked-books.jpg",
+                    "totalVotes": 205,
+                    "questions": [
+                      {
+                        "id": 145,
+                        "type": "multiple_choice",
+                        "question": "How many books do you read per month on average?",
+                        "options": ["None", "1-2", "3-5", "More than 5"]
+                      },
+                      {
+                        "id": 146,
+                        "type": "multiple_choice",
+                        "question": "What genre of books do you prefer?",
+                        "options": ["Fiction", "Non-fiction", "Science fiction", "Mystery", "Biography", "Other"]
+                      },
+                      {
+                        "id": 147,
+                        "type": "multiple_choice",
+                        "question": "Where do you usually read books?",
+                        "options": ["At home", "In a library", "At a café", "Outdoors"]
+                      },
+                      {
+                        "id": 148,
+                        "type": "multiple_choice",
+                        "question": "Do you prefer physical books or e-books?",
+                        "options": ["Physical books", "E-books", "Both equally"]
+                      }
+                    ]
+                  }
+                  ,
+                  {
+                    "title": "Music Preference Survey",
+                    "description": "Explore music tastes and preferences",
+                    "category": "Entertainment",
+                    "image": "https://i.ibb.co/74YH1Lg/music-video-player-multimedia-concept.jpg",
+                    "totalVotes": 175,
+                    "questions": [
+                      {
+                        "id": 149,
+                        "type": "multiple_choice",
+                        "question": "Which genre of music do you prefer the most?",
+                        "options": ["Rock", "Pop", "Hip-hop", "Electronic", "Classical", "Other"]
+                      },
+                      {
+                        "id": 150,
+                        "type": "multiple_choice",
+                        "question": "How do you usually discover new music?",
+                        "options": ["Streaming platforms", "Radio", "Recommendations from friends", "Music blogs", "Concerts"]
+                      },
+                      {
+                        "id": 151,
+                        "type": "multiple_choice",
+                        "question": "Do you prefer listening to music alone or with others?",
+                        "options": ["Alone", "With friends", "With family", "At events"]
+                      },
+                      {
+                        "id": 152,
+                        "type": "multiple_choice",
+                        "question": "How important are lyrics to you in a song?",
+                        "options": ["Very important", "Somewhat important", "Not very important"]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Cultural Awareness Survey",
+                    "description": "Understanding cultural awareness",
+                    "category": "Sociology",
+                    "image": "https://i.ibb.co/Myz0xHw/tourists-checking-map.jpg",
+                    "totalVotes": 195,
+                    "questions": [
+                      {
+                        "id": 153,
+                        "type": "multiple_choice",
+                        "question": "Do you actively engage in learning about different cultures?",
+                        "options": ["Yes, frequently", "Sometimes", "Rarely", "Not at all"]
+                      },
+                      {
+                        "id": 154,
+                        "type": "multiple_choice",
+                        "question": "Have you traveled to explore other cultures?",
+                        "options": ["Yes, extensively", "A few times", "Once", "Never"]
+                      },
+                      {
+                        "id": 155,
+                        "type": "multiple_choice",
+                        "question": "How important is cultural diversity in society?",
+                        "options": ["Extremely important", "Very important", "Moderately important", "Not very important"]
+                      },
+                      {
+                        "id": 156,
+                        "type": "multiple_choice",
+                        "question": "Do you celebrate cultural festivals outside of your own culture?",
+                        "options": ["Frequently", "Sometimes", "Rarely", "Never"]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Gaming Habits Survey",
+                    "description": "Study gaming habits and preferences",
+                    "category": "Technology",
+                    "image": "https://i.ibb.co/XVk8RsJ/back-view-professional-gamer-streaming-his-competition-triple-monitor-setup-with-two-streaming-chats.jpg",
+                    "totalVotes": 240,
+                    "questions": [
+                      {
+                        "id": 157,
+                        "type": "multiple_choice",
+                        "question": "How many hours do you typically spend gaming in a week?",
+                        "options": ["Less than 5 hours", "5-10 hours", "10-20 hours", "More than 20 hours"]
+                      },
+                      {
+                        "id": 158,
+                        "type": "multiple_choice",
+                        "question": "What type of games do you enjoy the most?",
+                        "options": ["Action", "Adventure", "RPG", "Strategy", "Simulation", "Sports", "Puzzle"]
+                      },
+                      {
+                        "id": 159,
+                        "type": "multiple_choice",
+                        "question": "What gaming platform do you use most frequently?",
+                        "options": ["PC", "Console", "Mobile", "Handheld gaming device"]
+                      },
+                      {
+                        "id": 160,
+                        "type": "multiple_choice",
+                        "question": "Do you prefer single-player or multiplayer games?",
+                        "options": ["Single-player", "Multiplayer"]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "E-Learning Survey",
+                    "description": "Attitudes towards online education",
+                    "category": "Education",
+                    "image": "https://i.ibb.co/VvCSKG5/pexels-tirachard-kumtanom-733856.jpg",
+                    "totalVotes": 225,
+                    "questions": [
+                      {
+                        "id": 161,
+                        "type": "multiple_choice",
+                        "question": "How satisfied are you with online learning experiences?",
+                        "options": ["Very dissatisfied", "Dissatisfied", "Neutral", "Satisfied", "Very satisfied"]
+                      },
+                      {
+                        "id": 162,
+                        "type": "multiple_choice",
+                        "question": "What type of online courses do you prefer?",
+                        "options": ["Live lectures", "Pre-recorded videos", "Interactive modules", "Text-based courses"]
+                      },
+                      {
+                        "id": 163,
+                        "type": "multiple_choice",
+                        "question": "How often do you engage with online learning materials?",
+                        "options": ["Daily", "Several times a week", "Once a week", "Less than once a week"]
+                      },
+                      {
+                        "id": 164,
+                        "type": "multiple_choice",
+                        "question": "What's your primary motivation for taking online courses?",
+                        "options": ["Career advancement", "Personal interest", "Skill development", "Certification"]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Parenting Challenges Survey",
+                    "description": "Understanding parenting challenges",
+                    "category": "Family & Parenting",
+                    "image": "https://i.ibb.co/ZTGsvM5/adult-trieng-acheve-work-personal-life.jpg",
+                    "totalVotes": 180,
+                    "questions": [
+                      {
+                        "id": 165,
+                        "type": "multiple_choice",
+                        "question": "What's the most challenging aspect of parenting for you?",
+                        "options": ["Work-life balance", "Discipline", "Child's education", "Emotional support", "Healthcare"]
+                      },
+                      {
+                        "id": 166,
+                        "type": "multiple_choice",
+                        "question": "How do you usually seek parenting advice?",
+                        "options": ["Family or friends", "Books or articles", "Online forums", "Professional counseling"]
+                      },
+                      {
+                        "id": 167,
+                        "type": "multiple_choice",
+                        "question": "What's your biggest concern about modern parenting?",
+                        "options": ["Screen time", "Peer pressure", "Mental health", "Safety", "Education"]
+                      },
+                      {
+                        "id": 168,
+                        "type": "multiple_choice",
+                        "question": "Do you feel supported in your role as a parent?",
+                        "options": ["Yes, always", "Mostly", "Sometimes", "Rarely", "Never"]
+                      }
+                    ]
+                  }
+                  ,
+                  {
+                    "title": "Shopping Habits Survey",
+                    "description": "Investigate shopping habits and preferences",
+                    "category": "Lifestyle",
+                    "image": "https://i.ibb.co/FDCWyBF/female-friends-out-shopping-together.jpg",
+                    "totalVotes": 215,
+                    "questions": [
+                      {
+                        "id": 169,
+                        "type": "multiple_choice",
+                        "question": "Where do you prefer to shop the most?",
+                        "options": ["Physical stores", "Online stores", "Both equally"]
+                      },
+                      {
+                        "id": 170,
+                        "type": "multiple_choice",
+                        "question": "What influences your purchase decisions the most?",
+                        "options": ["Price", "Brand", "Quality", "Reviews", "Convenience"]
+                      },
+                      {
+                        "id": 171,
+                        "type": "multiple_choice",
+                        "question": "How often do you shop for non-essential items?",
+                        "options": ["Daily", "Weekly", "Monthly", "Occasionally"]
+                      },
+                      {
+                        "id": 172,
+                        "type": "multiple_choice",
+                        "question": "What category of products do you spend the most on?",
+                        "options": ["Clothing and accessories", "Electronics", "Home and living", "Beauty and personal care", "Others"]
+                      }
+                    ]
+                  }
+                  
+                  
+                  
+                  
+              
+              
+              
+           
+          
+      
+  ]
+  

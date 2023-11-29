@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "Fitness Trends of 2023",
+      "image": "https://ibb.co/sghydSg",
+      "description": "Discover the latest fitness routines, popular workout regimens, and health trends that have gained traction in 2023.",
+      "totalVotes": 567,
+      "category": "Health & Fitness",
+      "author": "FitnessMagazine2023",
+      "dateCreated": "November 15, 2023"
+    },
+    {
+      "id": 2,
+      "title": "Mental Health Check-In",
+      "image": "https://ibb.co/sPsxRjq",
+      "description": "Share your thoughts on mental well-being, stress management techniques, and experiences related to mental health awareness.",
+      "totalVotes": 732,
+      "category": "Well-being & Mindfulness",
+      "author": "MindfulnessHub",
+      "dateCreated": "November 10, 2023"
+    },
+    {
+      "id": 3,
+      "title": "Remote Work Satisfaction Survey",
+      "image": "https://ibb.co/DgGJPBR",
+      "description": "Evaluate your satisfaction levels and challenges faced while working remotely. Help us understand the remote work experience.",
+      "totalVotes": 654,
+      "category": "Work & Productivity",
+      "author": "WorkFromAnywhereInc",
+      "dateCreated": "November 5, 2023"
+    },
+    {
+      "id": 4,
+      "title": "Environmental Awareness Survey",
+      "image": "https://ibb.co/6DvJ5gx",
+      "description": "Let's gauge awareness levels and actions taken toward environmental conservation. Share your thoughts on sustainability!",
+      "totalVotes": 810,
+      "category": "Environment & Conservation",
+      "author": "GreenEarthInitiative",
+      "dateCreated": "November 1, 2023"
+    },
+    {
+      "id": 5,
+      "title": "Technology Adoption in Education",
+      "image": "https://ibb.co/6DvJ5gx",
+      "description": "Explore the integration of technology in education. Share your experiences and opinions on tech-based learning.",
+      "totalVotes": 601,
+      "category": "Education & Technology",
+      "author": "EdTechInsights",
+      "dateCreated": "October 28, 2023"
+    },
+    {
+      "id": 6,
+      "title": "Dietary Preferences and Nutrition Habits",
+      "image": "https://ibb.co/xHHXSm",
+      "description": "Let's talk about food! Share your dietary preferences, nutrition habits, and healthy eating routines.",
+      "totalVotes": 933,
+      "category": "Nutrition & Health",
+      "author": "HealthyEatingHub",
+      "dateCreated": "October 25, 2023"
+    }
+  ]
+  
