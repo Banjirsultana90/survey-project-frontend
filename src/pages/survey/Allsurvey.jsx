@@ -15,9 +15,10 @@ const Allsurvey = () => {
     );
 
     return (
-        <div>
-            {/* Filter options */}
-            <input
+        <div className='my-10'>
+          <div className='my-10 mx-20'>
+              {/* Filter options */}
+              <input
                 type="text"
                 placeholder="Filter by title"
                 value={filter.title}
@@ -35,13 +36,14 @@ const Allsurvey = () => {
                 value={filter.vote}
                 onChange={e => setFilter({ ...filter, vote: e.target.value })}
             />
+          </div>
 
             {/* Display surveys */}
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
                 {filteredSurveys.map(survey => (
                     // eslint-disable-next-line react/jsx-key
-                    <Link to= {`/surveydetails/${survey._id}`}><div key={survey.id} className="card w-96 bg-base-100 shadow-xl">
-                    <div className="card-body">
+                  <div key={survey.id} className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card-body bg-purple-600 text-white">
                         <h2 className="card-title">{survey.title}</h2>
                         <p>Category:{survey.category}</p>
                         <p>Description: {survey.description}</p>
@@ -50,11 +52,12 @@ const Allsurvey = () => {
 
 
                         <div className="card-actions justify-end">
-                            {/* <button className="btn btn-primary">Buy Now</button> */}
+                        <Link to= {`/surveydetails/${survey._id}`}><button className="btn">See details</button> </Link>
+                            <Link to={`/update/${survey._id}`}><button className="btn">Update</button></Link>
                         </div>
                     </div>
                    
-                </div></Link>
+                </div>
                 ))}
             </div>
 

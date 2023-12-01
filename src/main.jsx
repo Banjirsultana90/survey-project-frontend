@@ -32,6 +32,8 @@ import Userspayment from './pages/dashboard/admin/Userspayment';
 import Alluser from './pages/dashboard/admin/Alluser';
 import Surveyresponse from './pages/dashboard/admin/Surveyresponse';
 import Surveystatus from './pages/dashboard/admin/Surveystatus';
+import Surveyresult from './pages/survey/Surveyresult';
+import Update from './pages/survey/Update';
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
   {
@@ -72,8 +74,14 @@ const router = createBrowserRouter([
         loader: () => fetch('http://localhost:5000/allcreatedsurvey')
       },
       {
-        path:'/surveyresult'
-      }
+        path:'/surveyresult',
+        element:<Surveyresult></Surveyresult>
+      },
+      {
+        path:'/update/:id',
+        element:<Update></Update>,
+        loader: ({params}) => fetch(`http://localhost:5000/allcreatedsurvey/${params.id}`)
+      },
 
     ]
   },
@@ -103,8 +111,10 @@ const router = createBrowserRouter([
       },
       {
         path:'surveyresponse',
-        element:<Surveyresponse></Surveyresponse>
+        element:<Surveyresponse></Surveyresponse>,
+       
       },
+      
       {
         path:'surveystatus',
         element:<Surveystatus></Surveystatus>
@@ -114,10 +124,12 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <div className='max-w-7xl mx-auto bg-base-200'>
     <AuthProvider>
       <QueryClientProvider client={queryClient}>
            <RouterProvider router={router} />
       </QueryClientProvider>
     </AuthProvider>
+    </div>
   </React.StrictMode>,
 )

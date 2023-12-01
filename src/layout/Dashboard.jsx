@@ -16,12 +16,12 @@ const Dashboard = () => {
 
     return (
         <div className='flex gap-6 '>
-            <div className="w-64 min-h-screen bg-orange-400 py-5 px-5">
+            <div className="w-64 min-h-screen bg-purple-600 text-white  py-5 px-5">
                 <ul>
                     {isAdmin ? (
 
                         <>
-                            <li>Admin Home</li>
+                            <li className='text-2xl font-bold'>Admin Home</li>
                             {/*  */}
                             <li>
                                 <NavLink to='/dashboard/alluser' className='flex gap-1 items-center'>
@@ -37,18 +37,19 @@ const Dashboard = () => {
                         </>
                     ) : isSurveyor ? (
 
-                        <>   <li>Surveyor Home</li>
+                        <>   <li className='text-2xl font-bold'>Surveyor Home</li>
                             <li><NavLink to='/dashboard/surveyor'>Create Survey</NavLink></li>
-                            <li><NavLink to='/dashboard/update'>Update Survey</NavLink></li>
+                            {/* <li><NavLink to='/dashboard/update'>Update Survey</NavLink></li> */}
                             <li><NavLink to='/dashboard/surveyresponse'>Survey Response</NavLink></li>
-                            <li><NavLink to='/dashboard/userhome'>User</NavLink></li>
+                            {/* <li><NavLink to='/dashboard/userhome'>User</NavLink></li> */}
 
                             <li><NavLink to='/'>Home</NavLink></li>
                         </>
                     ) : (
                         <>
                             <div className="divider"></div>
-                            <li><NavLink to='/dashboard/userhome'>User</NavLink></li>
+                            <li className='text-2xl font-bold'>User Home</li>
+                            {/* <li><NavLink to='/dashboard/userhome'>User</NavLink></li> */}
                             <li><NavLink to='/dashboard/userpayinfo'>User payment info</NavLink></li>
 
                             <div className="divider"></div>

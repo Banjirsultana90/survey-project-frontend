@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import useAxiosSecure from '../../../components/base/Useaxiossecure';
+import { Toaster } from 'react-hot-toast';
 
 const Userspayment = () => {
 
@@ -42,6 +43,7 @@ const Userspayment = () => {
                     </tbody>
                 </table>
             </div>
+            <Toaster />
         </div>
     );
 };

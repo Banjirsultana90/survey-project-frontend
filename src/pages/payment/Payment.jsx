@@ -3,14 +3,16 @@ import { loadStripe } from '@stripe/stripe-js';
 import React from 'react';
 import Checkout from '../../components/form/Checkout';
 // add pk
-const stripePromise=loadStripe(import.meta.env.VITE_PUBLISHABLEKEY)
+const stripePromise = loadStripe(import.meta.env.VITE_PUBLISHABLEKEY)
 const Payment = () => {
     return (
-        <div className='mx-10 my-9'>
-         <Elements stripe={stripePromise} >
-            <Checkout></Checkout>
+        <div>
+            <div className='mx-20 my-20'>
+                <Elements stripe={stripePromise} >
+                    <Checkout></Checkout>
 
-         </Elements>
+                </Elements>
+            </div>
         </div>
     );
 };

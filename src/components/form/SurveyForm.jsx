@@ -117,7 +117,7 @@ const SurveyForm = () => {
                             name="options"
                             value="yes"
 
-                            className="border rounded-full w-4 h-4 focus:outline-none focus:border-blue-500"
+                            className="border rounded-full w-4 h-4 focus:outline-none focus:border-purple-600"
                         />
                         <label htmlFor="yes">Yes</label>
                         <input
@@ -126,7 +126,7 @@ const SurveyForm = () => {
                             name="options"
                             value="no"
 
-                            className="border rounded-full w-4 h-4 focus:outline-none focus:border-blue-500"
+                            className="border rounded-full w-4 h-4 focus:outline-none focus:border-purple-600"
                         />
                         <label htmlFor="no">No</label>
                     </div>
@@ -150,7 +150,7 @@ const SurveyForm = () => {
                     </button>
                     </div> */}
                 <div>
-                    <input type="submit" value="Submit" className="bg-blue-500 text-white py-2 px-4 rounded-md cursor-pointer" />
+                    <input type="submit" value="Submit" className='bg-purple-600 text-white py-2 px-4 rounded-md cursor-pointer' />
                 </div>
             </form>
         </div>

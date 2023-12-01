@@ -3,7 +3,7 @@ import img from '../../assets/survey-suggestion-opinion-review-feedback-concept.
 
 const Banner = () => {
     return (
-        <div>
+        <div className=''> 
             <div className="hero min-h-screen" style={{ backgroundImage: `url(${img})` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
@@ -12,7 +12,7 @@ const Banner = () => {
                         <p className="mb-5">Empowering Your Health, One Survey at a Time
 
                             Explore Surveys, Shape Your Well-being</p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn bg-purple-600 text-white">Get Started</button>
                     </div>
                 </div>
             </div>

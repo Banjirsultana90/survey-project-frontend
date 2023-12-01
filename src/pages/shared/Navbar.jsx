@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../components/provider/AuthProvider';
+import img1 from '../../assets/05042315.jpg'
 
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
             
             </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar  text-white max-w-screen-xl mx-auto bg-opacity-30 bg-black">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,7 +29,7 @@ const Navbar = () => {
                         {nav}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <img className="rounded-full h-16 w-22 bg-slate-300" src={img1} alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
