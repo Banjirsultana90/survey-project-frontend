@@ -1,58 +1,115 @@
 import React, { useContext, useRef } from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 
 import { AuthContext } from '../../components/provider/AuthProvider';
 import Sociallogin from '../social/Sociallogin';
-import useAxiosPublic from '../../components/base/useAxiosPublic';
+
+import useAxiosSecure from '../../components/base/Useaxiossecure';
 
 
 
 const Register = () => {
-    const axiosPublic=useAxiosPublic()
-    const { createuser ,handleupdateprofile} = useContext(AuthContext);
+    // const axiosSecure=useAxiosSecure()
+    // const { createuser ,handleupdateprofile} = useContext(AuthContext);
+    // const formRef = useRef(null);
+    // const handleregister = (e) => {
+    //     e.preventDefault();
+    //     // const role=user
+    //     const form = new FormData(formRef.current);
+    //     const name = form.get('name');
+    //     const photo=form.get('photo')
+    //     const email = form.get('email');
+    //     const password = form.get('password');
+    //     // console.log(name,photo,email,password );
+    //     if (!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) {
+    //         toast.error('Password should be less than 6 characters, no uppercase letters, and no special characters.');
+    //         return;
+    //     }
+
+    //     createuser(email, password, name)
+    //      handleupdateprofile(name,photo)
+    //         .then(() => {
+    //             const userinfo={
+    //                 name,
+    //                 email,
+    //                 role:'user'
+    //             }
+    //             axiosSecure.post('/alluser',userinfo,{withCredentials:true})
+               
+    //             .then((res)=>{
+    //                 if(res.data.insertedId){
+    //                     console.log('user added to the db');
+                       
+    //                     toast.success('Registration successful!');
+
+    //                 }
+                   
+    //             })
+                
+               
+    //         })
+    //         .catch((error) => {
+    //             console.log(error);
+              
+    //             toast.error(error.message);
+    //         });
+    // }
+    const axiosSecure=useAxiosSecure();
+    const { createuser, handleupdateprofile } = useContext(AuthContext);
     const formRef = useRef(null);
+    const navigate=useNavigate()
+
     const handleregister = (e) => {
         e.preventDefault();
         const form = new FormData(formRef.current);
         const name = form.get('name');
-        const photo=form.get('photo')
+        const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        // console.log(name,photo,email,password );
+
         if (!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) {
             toast.error('Password should be less than 6 characters, no uppercase letters, and no special characters.');
             return;
         }
 
         createuser(email, password, name)
-         handleupdateprofile(name,photo)
             .then(() => {
-                const userinfo={
+                const userinfo = {
                     name,
-                    email
-                }
-                axiosPublic.post('/alluser',userinfo)
-               
-                .then((res)=>{
-                    if(res.insertedId){
-                        console.log('user added to the db');
-                       
-                        toast.success('Registration successful!');
+                    email,
+                    role: 'user'
+                };
 
-                    }
-                   
-                })
-                
-               
+                handleupdateprofile(name, photo)
+                    .then(() => {
+                        axiosSecure.post('/alluser', userinfo, { withCredentials: true })
+                            .then((res) => {
+                                if (res.data.insertedId) {
+                                    console.log('User added to the database');
+                                    toast.success('Registration successful!');
+                                    navigate('/login')
+                                } else {
+                                    toast.error('User already exists');
+                                }
+                            })
+                            .catch((error) => {
+                                console.error(error);
+                                toast.error(error.message);
+                            });
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                        toast.error(error.message);
+                    });
             })
             .catch((error) => {
-                console.log(error);
-              
+                console.error(error);
                 toast.error(error.message);
             });
-    }
+    };
+
     return (
         <div className="hero min-h-screen bg-base-200 overflow-x-hidden">
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

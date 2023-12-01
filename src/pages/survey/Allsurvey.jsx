@@ -48,6 +48,7 @@ const Allsurvey = () => {
                         {/* <p>vote:{survey.votr}</p> */}
 
 
+
                         <div className="card-actions justify-end">
                             {/* <button className="btn btn-primary">Buy Now</button> */}
                         </div>

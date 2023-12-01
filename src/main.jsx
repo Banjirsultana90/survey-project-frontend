@@ -27,6 +27,11 @@ import {
 } from '@tanstack/react-query'
 import Pricing from './pages/Pricing';
 import Payment from './pages/payment/Payment';
+import Userpaymentinfo from './pages/payment/Userpaymentinfo';
+import Userspayment from './pages/dashboard/admin/Userspayment';
+import Alluser from './pages/dashboard/admin/Alluser';
+import Surveyresponse from './pages/dashboard/admin/Surveyresponse';
+import Surveystatus from './pages/dashboard/admin/Surveystatus';
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
   {
@@ -66,6 +71,9 @@ const router = createBrowserRouter([
         element: <Surveydetails></Surveydetails>,
         loader: () => fetch('http://localhost:5000/allcreatedsurvey')
       },
+      {
+        path:'/surveyresult'
+      }
 
     ]
   },
@@ -80,6 +88,26 @@ const router = createBrowserRouter([
       {
         path: 'users',
         element: <Users></Users>
+      },
+      {
+        path:'alluser',
+        element:<Alluser></Alluser>
+      },
+      {
+        path: 'userpayinfo',
+        element: <Userpaymentinfo></Userpaymentinfo>
+      },
+      {
+        path:'userspayment',
+        element:<Userspayment></Userspayment>
+      },
+      {
+        path:'surveyresponse',
+        element:<Surveyresponse></Surveyresponse>
+      },
+      {
+        path:'surveystatus',
+        element:<Surveystatus></Surveystatus>
       }
     ]
   }
