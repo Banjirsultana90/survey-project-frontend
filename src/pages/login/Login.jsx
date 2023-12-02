@@ -6,10 +6,6 @@ import toast, { Toaster } from 'react-hot-toast';
 import { AuthContext } from '../../components/provider/AuthProvider';
 import Sociallogin from '../social/Sociallogin';
 
-
-
-
-
 const Login = () => {
 
     const { signin, user } = useContext(AuthContext);

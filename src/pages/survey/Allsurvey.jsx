@@ -5,14 +5,22 @@ import { Link, useLoaderData } from 'react-router-dom';
 
 const Allsurvey = () => {
     const allcollection = useLoaderData()
-    // console.log(allcollection);
+    console.log(allcollection);
     const [filter, setFilter] = useState({ title: '', category: '', vote: '' });
 
-    const filteredSurveys = allcollection.filter(survey =>
+    // const filteredSurveys = allcollection.filter(survey =>
+    //     survey.title.toLowerCase().includes(filter.title.toLowerCase()) &&
+    //     survey.category.toLowerCase().includes(filter.category.toLowerCase()) &&
+    //     String(survey.totalVotes).includes(filter.vote)
+    // );
+    const filteredSurveys = Array.isArray(allcollection)
+    ? allcollection.filter(survey =>
         survey.title.toLowerCase().includes(filter.title.toLowerCase()) &&
         survey.category.toLowerCase().includes(filter.category.toLowerCase()) &&
         String(survey.totalVotes).includes(filter.vote)
-    );
+    )
+    : [];
+
 
     return (
         <div className='my-10'>

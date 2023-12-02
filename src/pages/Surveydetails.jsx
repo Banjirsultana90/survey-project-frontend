@@ -80,7 +80,7 @@ const SurveyDetails = () => {
                     if (res.data.insertedId) {
                         toast.success("Voted successfully");
                         setVoteDisabled(true); // Disable voting after a successful vote
-                        navigate('/surveyresult')
+                        navigate('/allsurvey')
                     }
                 })
                 .catch(error => {

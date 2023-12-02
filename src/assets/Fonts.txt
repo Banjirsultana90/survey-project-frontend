@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: BPdots
+Author: Backpacker
+Url: http://www.fontsquirrel.com/fonts/bpdots
+
+Font: League Spartan
+Author: The League of Moveable Type
+Url: http://www.fontsquirrel.com/fonts/league-spartan

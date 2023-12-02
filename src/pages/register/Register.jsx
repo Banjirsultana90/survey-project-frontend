@@ -11,51 +11,7 @@ import useAxiosSecure from '../../components/base/Useaxiossecure';
 
 
 const Register = () => {
-    // const axiosSecure=useAxiosSecure()
-    // const { createuser ,handleupdateprofile} = useContext(AuthContext);
-    // const formRef = useRef(null);
-    // const handleregister = (e) => {
-    //     e.preventDefault();
-    //     // const role=user
-    //     const form = new FormData(formRef.current);
-    //     const name = form.get('name');
-    //     const photo=form.get('photo')
-    //     const email = form.get('email');
-    //     const password = form.get('password');
-    //     // console.log(name,photo,email,password );
-    //     if (!/^(?=.*[A-Z])(?=.*[\W_]).{6,}$/.test(password)) {
-    //         toast.error('Password should be less than 6 characters, no uppercase letters, and no special characters.');
-    //         return;
-    //     }
-
-    //     createuser(email, password, name)
-    //      handleupdateprofile(name,photo)
-    //         .then(() => {
-    //             const userinfo={
-    //                 name,
-    //                 email,
-    //                 role:'user'
-    //             }
-    //             axiosSecure.post('/alluser',userinfo,{withCredentials:true})
-               
-    //             .then((res)=>{
-    //                 if(res.data.insertedId){
-    //                     console.log('user added to the db');
-                       
-    //                     toast.success('Registration successful!');
-
-    //                 }
-                   
-    //             })
-                
-               
-    //         })
-    //         .catch((error) => {
-    //             console.log(error);
-              
-    //             toast.error(error.message);
-    //         });
-    // }
+ 
     const axiosSecure=useAxiosSecure();
     const { createuser, handleupdateprofile } = useContext(AuthContext);
     const formRef = useRef(null);

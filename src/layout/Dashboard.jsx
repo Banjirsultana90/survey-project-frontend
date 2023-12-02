@@ -40,7 +40,8 @@ const Dashboard = () => {
                         <>   <li className='text-2xl font-bold'>Surveyor Home</li>
                             <li><NavLink to='/dashboard/surveyor'>Create Survey</NavLink></li>
                             {/* <li><NavLink to='/dashboard/update'>Update Survey</NavLink></li> */}
-                            <li><NavLink to='/dashboard/surveyresponse'>Survey Response</NavLink></li>
+                            <li><NavLink to='/dashboard/feedback'>Survey Response</NavLink></li>
+                            <li><NavLink to='/dashboard/surveyresponse'>Users feedback</NavLink></li>
                             {/* <li><NavLink to='/dashboard/userhome'>User</NavLink></li> */}
 
                             <li><NavLink to='/'>Home</NavLink></li>

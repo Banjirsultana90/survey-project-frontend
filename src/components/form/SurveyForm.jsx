@@ -19,7 +19,7 @@ const SurveyForm = () => {
         console.log(formdata);
 
 
-        fetch('http://localhost:5000/allcreatedsurvey', {
+        fetch('https://survey-project-server-xi.vercel.app/allcreatedsurvey', {
             method: 'POST',
             headers: {
                 "content-type": 'application/json'

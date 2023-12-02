@@ -1,52 +1,4 @@
-// import React from 'react';
-// import { axiosSecure } from '../../../components/base/Useaxiossecure';
-// import { useQuery } from '@tanstack/react-query';
 
-
-
-// const Surveyresponse = () => {
-//     const { data: votes = [] } = useQuery({
-//         queryKey: ['votes'],
-//         queryFn: async () => {
-//             const res = await axiosSecure.get('/allvotedfeature', { withCredentials: true });
-//             return res.data;
-//         }
-//     });
-//     return (
-//         <div>
-//             <div className="overflow-x-auto">
-//                 <table className="table">
-
-//                     <thead>
-//                         <tr>
-//                             <th></th>
-//                             <th>Name</th>
-//                             <th>Email</th>
-//                             <th>Time</th>
-//                             <th>Voted</th>
-//                         </tr>
-//                     </thead>
-//                     <tbody>
-
-//                         {votes.map((vote, index) =>
-//                             <tr key={vote._id}>
-//                                 <th>{index + 1}</th>
-//                                 <td>{vote.name}</td>
-//                                 <td>{vote.email}</td>
-//                                 <td>{vote.timestamp }</td>
-//                                 <td>{vote.votedOption }</td>
-
-
-//                             </tr>)}
-
-//                     </tbody>
-//                 </table>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Surveyresponse;
 import React, { useEffect, useRef } from 'react';
 import { axiosSecure } from '../../../components/base/Useaxiossecure';
 import { useQuery } from '@tanstack/react-query';
@@ -104,7 +56,7 @@ const Surveyresponse = () => {
                     <thead>
                        <tr>
                              <th></th>
-                             <th>Name</th>
+                             <th>SurveyId</th>
                             <th>Email</th>
                           <th>Time</th>
                             <th>Voted</th>

@@ -65,6 +65,7 @@ const AuthProvider = ({ children }) => {
                     .then((res) => {
                         console.log(res.data);
                     });
+                    setloading(false)
             } 
             else {
                 axiosPublic.post('/logout', loggeduser, {
@@ -73,6 +74,7 @@ const AuthProvider = ({ children }) => {
                     .then((res) => {
                         console.log(res.data);
                     });
+                    setloading(false)
             }
         });
     

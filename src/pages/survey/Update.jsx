@@ -38,44 +38,8 @@ const Update = () => {
     } = surveys ||{}
     console.log(surveys);
     console.log(_id);
-  
 
-    // const handleupdate = async (event) => {
-    //     event.preventDefault();
-    //     const form = event.target;
 
-    //     const updatedsurvey = {
-    //         title: form.title.value,
-    //         deadline: form.deadline.value,
-    //         description: form.description.value,
-    //         category: form.category.value,
-        
-    //         questions: form.questions.value,
-    //         options: form.options.value,
-    //     };
-        
-
-    //     if (userRole === 'surveyor') {fetch(`http://localhost:5000/allcreatedsurvey/${id}`, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-           
-    //         body: JSON.stringify(updatedsurvey),
-    //     })
-    //     .then((res) => res.json())
-    //     .then((value) => {
-    //         if (value.modifiedCount > 0) {
-    //             toast.success('survey  updated successfully');
-    //         }
-    //         navigate('/allsurvey')
-    //     });
-        
-
-          
-    //     }
-    //     else { toast.error('You are not authorized to update this job.'); }
-    // };
     const handleupdate = async (event) => {
         event.preventDefault();
         const form = event.target;
@@ -91,7 +55,7 @@ const Update = () => {
 
         if (userRole === 'surveyor') {
             try {
-                const response = await fetch(`http://localhost:5000/allcreatedsurvey/${_id}`, {
+                const response = await fetch(`https://survey-project-server-xi.vercel.app/allcreatedsurvey/${_id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

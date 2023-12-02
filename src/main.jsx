@@ -10,14 +10,13 @@ import "./index.css";
 import Root from './layout/Root';
 import Error from './pages/Error';
 import Home from './pages/Home/Home';
-import Jobdetails from './pages/Surveydetails';
+
 import Allsurvey from './pages/survey/Allsurvey';
 import AuthProvider from './components/provider/AuthProvider';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Surveydetails from './pages/Surveydetails';
 import Dashboard from './layout/Dashboard';
-import Surveyorboard from './pages/dashboard/surveyor/Surveyorboard';
 import SurveyForm from './components/form/SurveyForm';
 import Users from './pages/dashboard/admin/Users';
 import {
@@ -34,6 +33,13 @@ import Surveyresponse from './pages/dashboard/admin/Surveyresponse';
 import Surveystatus from './pages/dashboard/admin/Surveystatus';
 import Surveyresult from './pages/survey/Surveyresult';
 import Update from './pages/survey/Update';
+import Feedback from './pages/survey/Feedback';
+import Adminhome from './pages/dashboard/admin/Adminhome';
+import Surveyorhome from './pages/dashboard/surveyor/Surveyorhome';
+import Userhome from './pages/User/Userhome';
+import Acess from './components/acess/Acess';
+import Adminroute from './routes/Adminroute';
+import Privateroute from './routes/Privateroute'
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
   {
@@ -55,8 +61,12 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
+        path:'/access',
+        element:<Acess></Acess>
+      },
+      {
         path:'/payment',
-        element:<Payment></Payment>
+        element:<Privateroute><Payment></Payment></Privateroute>
       },
       {
         path:'/price',
@@ -65,13 +75,13 @@ const router = createBrowserRouter([
       {
         path: '/allsurvey',
         element: <Allsurvey></Allsurvey>,
-        loader: () => fetch('http://localhost:5000/allcreatedsurvey')
+        loader: () => fetch('https://survey-project-server-xi.vercel.app/allcreatedsurvey')
 
       },
       {
         path: '/surveydetails/:id',
         element: <Surveydetails></Surveydetails>,
-        loader: () => fetch('http://localhost:5000/allcreatedsurvey')
+        loader: () => fetch('https://survey-project-server-xi.vercel.app/allcreatedsurvey')
       },
       {
         path:'/surveyresult',
@@ -80,7 +90,7 @@ const router = createBrowserRouter([
       {
         path:'/update/:id',
         element:<Update></Update>,
-        loader: ({params}) => fetch(`http://localhost:5000/allcreatedsurvey/${params.id}`)
+        loader: ({params}) => fetch(`https://survey-project-server-xi.vercel.app/allcreatedsurvey/${params.id}`)
       },
 
     ]
@@ -99,7 +109,7 @@ const router = createBrowserRouter([
       },
       {
         path:'alluser',
-        element:<Alluser></Alluser>
+        element:<Adminroute><Alluser></Alluser></Adminroute>
       },
       {
         path: 'userpayinfo',
@@ -107,7 +117,7 @@ const router = createBrowserRouter([
       },
       {
         path:'userspayment',
-        element:<Userspayment></Userspayment>
+        element:<Adminroute><Userspayment></Userspayment></Adminroute>
       },
       {
         path:'surveyresponse',
@@ -118,7 +128,23 @@ const router = createBrowserRouter([
       {
         path:'surveystatus',
         element:<Surveystatus></Surveystatus>
-      }
+      },
+      {
+        path:'feedback',
+        element:<Feedback></Feedback>
+      },
+      {
+        path:'adminhome',
+        element:<Adminhome></Adminhome>
+      },
+      {
+        path:'surveyorhome',
+        element:<Surveyorhome></Surveyorhome>
+      },
+      {
+        path:'userhome',
+        element:<Userhome></Userhome>
+      },
     ]
   }
 ]);
