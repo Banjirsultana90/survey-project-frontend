@@ -6,7 +6,7 @@
 - React
 - Node.js
 - MongoDB
-
+## Features
 ****Server Configuration: Establishing the initial server setup using Express, handling dependencies, and structuring the main server file.
 
 ****Route Organization: Organizing and defining routes for various API endpoints efficiently using express.Router() or similar middleware.
