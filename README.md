@@ -1,3 +1,11 @@
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
+- MongoDB
 
 ****Server Configuration: Establishing the initial server setup using Express, handling dependencies, and structuring the main server file.
 
